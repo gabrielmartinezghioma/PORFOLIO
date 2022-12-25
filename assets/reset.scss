@@ -1,18 +1,13 @@
 :root {
     /* Colores */
-    --color-primario: #393939;
-    --color-secundario: #ffffff;
-    --tipo-principal: Helvetica, Arial, sans-serif;
-    --tipo-secundaria: Verdana;
+    --primary--color: #ffffff;
+    --secondary--color: #F48E6C;
+    --tertiary--color: rgba(255, 255, 255, 0.534);
+    --quarter--color: rgba(255, 255, 255, 0.267);
+    --type-principal: 'Input Sans', sans-serif;
+    --type-secundaria: Verdana;
+   
   }
-  
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --color-primario: #ffffff;
-      --color-secundario: #393939;
-    }
-  }
-  
   
   @media (prefers-contrast: high) {
     :root {

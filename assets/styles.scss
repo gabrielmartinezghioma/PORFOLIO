@@ -4,7 +4,7 @@
     background-position: 0px 0px;
     background-size: 200px 200px;
     font-family: 'IBM Plex Sans', sans-serif;
-    color: #fff;
+    color: var(--primary--color);
     font-size: 1rem;
     line-height: 1.5;
     font-weight: 300;
@@ -40,18 +40,18 @@
 }
 
 .article__h1 {
-    font-family: 'Input Sans', sans-serif;
-    font-size: 4rem;
+    font-family: var(--type-principal);
+    font-size: 4.5rem;
     line-height: 1.4;
     font-weight: 300;
-    color: #F48E6C;
+    color: var(--secondary--color);
     position: absolute;
     text-align: start;
     cursor: pointer;
 }
 
 .article__h1--div {
-    color: #ffffff;
+    color: var(--primary--color);
 }
 
 .article--front,
@@ -67,7 +67,6 @@
 .article--front {
     z-index: 1;
     font-size: 50px;
-    color: rgba(255, 255, 255, 0.534);
 }
 
 .article--back {
@@ -78,12 +77,12 @@
     position: absolute;
     min-width: 80px;
     min-height: 80px;
-    background-color: rgba(255, 255, 255, 0.267);
+    color: var(--tertiary--color);
+    background-color: var(--quarter--color);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    border: 0px  #ffffff00 solid;
 }
 
 .article__div--1 {
@@ -150,19 +149,20 @@
 .article--back {
     z-index: 1;
     font-size: 30px;
-    color: rgba(255, 255, 255, 0.534);
+    color: var(--tertiary--color);
 }
 
 .article__div--back {
     position: absolute;
     min-width: 50px;
     min-height: 50px;
-    background-color: rgba(255, 255, 255, 0.267);
+    color: var(--tertiary--color);
+    background-color: var(--quarter--color);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 12.5px;
-    border: 0px  #ffffff00 solid;
+    border: 0px #ffffff00 solid;
 }
 
 .article__div--1Back {
@@ -182,7 +182,7 @@
 
 .article__div--3Back {
     top: 80%;
-    left: 90%;  
+    left: 90%;
 }
 
 .article__div--4Back {
@@ -233,5 +233,5 @@
 
 .article__div--transparent {
     background-color: rgba(255, 255, 255, 0.267);
-    border: 0px  #ffffff00 solid;
+    border: 0px #ffffff00 solid;
 }
