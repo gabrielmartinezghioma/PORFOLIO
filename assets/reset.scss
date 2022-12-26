@@ -6,8 +6,6 @@
     --quarter--color: rgba(255, 255, 255, 0.062);
     --fifth--color:  #ff4d4d;
     --type-principal: 'Input Sans', sans-serif;
-    --type-secundaria: Verdana;
-   
   }
   
   @media (prefers-contrast: high) {
@@ -17,7 +15,7 @@
     }
   }
    
-  /* Reseteamos los margin y paddings de todas las etiquetas */
+  /* Reseteo margin y paddings */
   *,
   *::before,
   *::after {
@@ -33,7 +31,7 @@
     display: block;
   }
   
-  /* Evitamos problemas con las imagenes */
+  /* multimedia */
   img,
   picture,
   video,
@@ -44,7 +42,7 @@
     display: block;
   }
   
-  /* Reseteamos los enlaces para funcionar como cajas... */
+  /* Reseteamos de enlaces para funcionar como cajas */
   a {
     display: block;
     text-decoration: none;
@@ -57,7 +55,7 @@
     display: inline;
   }
   
-  /* Quitamos los puntos de los <li> */
+  /* puntos de los <li> */
   li {
     list-style-type: none;
   }
@@ -101,8 +99,8 @@
   
   /* (Opcional) Configuramos el texto que seleccionamos */
   ::selection {
-    background-color: var(--color-primario);
-    color: var(--color-secundario);
+    background-color: var(--tertiary--color);
+    color: var(--primary--color);
   }
   
   /* Nivelamos problemas de tipografías y colocación de formularios */
