@@ -2,8 +2,8 @@ const parallax = document.querySelector('.section__article--parallax');
 const front = document.querySelector('.article--front');
 const back = document.querySelector('.article--back');
 
-const sFront = 100;
-const sBack = 300;
+const sFront = 70;
+const sBack = 150;
 
 parallax.addEventListener('mousemove', e => {
     const x = e.clientX;
@@ -13,7 +13,7 @@ parallax.addEventListener('mousemove', e => {
     translate(
         ${x / sFront}%, 
         ${y / sFront}%
-    )`;
+    )`; 
 
     back.style.transform = `
     translate(

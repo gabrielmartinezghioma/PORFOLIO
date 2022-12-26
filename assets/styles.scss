@@ -18,7 +18,7 @@
 
 .nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     width: 100%;
     position: relative;
     height: 10vh;
@@ -59,6 +59,37 @@
 .nav__ul--li1:hover,
 .nav__ul--li:hover {
     color: var(--primary--color);
+    transition: color 1s;
+}
+
+.nav__div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 2%;
+    column-gap: 20px;
+    color: var(--primary--color);
+    font-size: 1.2rem;
+}
+
+.nav__div__h4 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.nav__div__h4:hover,
+.bxl-linkedin:hover,
+.bxl-github:hover {
+    cursor: pointer;
+    color: var(--fifth--color);
+    transition: color 1s;
+}
+
+.nav__div__a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
 }
 
 .section {
@@ -96,7 +127,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    z-index: 3;
 }
 
 .article__div--h1 {
@@ -119,7 +150,7 @@
     margin-top: 5%;
     padding: 0.75rem 0.6rem 0.6rem 0.75rem;
     border-radius: 0.25rem;
-    background-color: #ff4d4d;
+    background-color: var(--fifth--color);
     -webkit-transition: opacity 200ms ease;
     transition: opacity 200ms ease;
     color: #16171b;
@@ -140,165 +171,138 @@
 }
 
 .article--front {
-    z-index: 1;
+    z-index: 2;
     font-size: 50px;
+}
+
+.article--intermediate{
+    z-index: 1;
+    font-size: 40px;
 }
 
 .article--back {
     z-index: 0;
+    font-size: 32px;
 }
 
 .article__div--front {
     position: absolute;
-    min-width: 80px;
-    min-height: 80px;
+    width: 70px;
+    height: 70px;
     color: var(--tertiary--color);
     background-color: var(--quarter--color);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
-}
-
-.article__div--1 {
-    top: 20%;
-    left: 8%;
-}
-
-.article__div--2 {
-    top: 60%;
-    left: 40%;
-}
-
-.article__div--3 {
-    top: 40%;
-    left: 70%;
-}
-
-.article__div--3 {
-    top: 10%;
-    left: 80%;
-}
-
-.article__div--4 {
-    top: 80%;
-    left: 1%;
-}
-
-
-.article__div--5 {
-    top: 70%;
-    left: 30%;
-}
-
-.article__div--6 {
-    top: 60%;
-    left: 70%;
-}
-
-.article__div--7 {
-    top: 75%;
-    left: 50%;
-}
-
-.article__div--8 {
-    top: 45%;
-    left: 2%;
-}
-
-.article__div--9 {
-    top: 10%;
-    left: 60%;
-}
-
-.article__div--10 {
-    top: 2%;
-    left: 35%;
-}
-
-.article__div--11 {
-    top: 85%;
-    left: 80%;
-}
-
-.article--back {
-    z-index: 1;
-    font-size: 30px;
-    color: var(--tertiary--color);
+    border-radius: 15px;
 }
 
 .article__div--back {
     position: absolute;
-    min-width: 50px;
-    min-height: 50px;
+    width: 45px;
+    height: 45px;
     color: var(--tertiary--color);
     background-color: var(--quarter--color);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 12.5px;
-    border: 0px #ffffff00 solid;
+   }
+
+.article__div--Front1 {
+    top: 12%;
+    left: 10%;
 }
 
-.article__div--1Back {
+.article__div--Front2 {
+    top: 8%;
+    left: 40%;
+}
+
+.article__div--Front3 {
+    top: 20%;
+    left: 70%;
+}
+
+.article__div--Front4 {
+    top: 70%;
+    left: 20%;
+}
+
+.article__div--Front5 {
+    top: 80%;
+    left: 60%;
+}
+
+.article__div--Front6 {
+    top: 60%;
+    left: 70%;
+}
+
+.article__div--Front7 {
+    top: 75%;
+    left: 40%;
+}
+
+.article__div--Front8 {
+    top: 60%;
+    left: 2%;
+}
+
+.article__div--Back1 {
     top: 20%;
     left: 30%;
 }
 
-.article__div--2Back {
+.article__div--Back2 {
     top: 5%;
     left: 70%;
 }
 
-.article__div--3Back {
+.article__div--Back3 {
     top: 70%;
     left: 80%;
 }
 
-.article__div--3Back {
+.article__div--Back4 {
     top: 80%;
     left: 90%;
 }
 
-.article__div--4Back {
+.article__div--Back5 {
     top: 2%;
     left: 10%;
 }
 
 
-.article__div--5Back {
+.article__div--Back6 {
     top: 50%;
     left: 20%;
 }
 
-.article__div--6Back {
+.article__div--Back7 {
     top: 40%;
     left: 10%;
 }
 
-.article__div--7Back {
+.article__div--Back8 {
     top: 30%;
     left: 80%;
 }
 
-.article__div--8Back {
+.article__div--Back9 {
     top: 20%;
     left: 90%;
 }
 
-.article__div--9Back {
+.article__div--Back10 {
     top: 80%;
     left: 2%;
 }
 
-.article__div--10Back {
+.article__div--Back11 {
     top: 70%;
     left: 60%;
-}
-
-.article__div--11Back {
-    top: 73%;
-    left: 5%;
 }
 
 .article__div--none {
