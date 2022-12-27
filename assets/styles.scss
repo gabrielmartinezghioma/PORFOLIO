@@ -328,10 +328,12 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: auto;
     background-image: url(./images/631a5d4631d4c55a475f3e34_noise-50.png), linear-gradient(90deg, #42312c, #452225);
     background-position: 0px 0px, 0px 0px;
     background-size: 200px, auto;
     border-radius: 20px;
+    margin: 30px 0;
 }
 
 .main__section--article {
@@ -344,23 +346,10 @@
     align-items: center;
 }
 
-.article__div--code {
-    width: 60px;
-    height: 60px;
-    background-color: var(--fifth--color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    border-radius: 10px;
-    align-self: flex-start;
-    margin: 40px 0 30px 0;
-}
-
 .article__h2 {
     font-size: 30px;
     align-self: flex-start;
-    margin-bottom: 30px;
+    margin: 30px 0;
     cursor: pointer;
     font-family: var(--type-principal);
     font-weight: 300;
@@ -373,6 +362,18 @@
     cursor: pointer;
     font-family: var(--type-secondary);
     font-weight: 300;
+}
+.article__div--code {
+    width: 60px;
+    height: 60px;
+    background-color: var(--fifth--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 10px;
+    align-self: flex-start;
+    margin: 40px 0 30px 0;
 }
 
 .section__article--icons {
@@ -504,7 +505,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-image: url(https://uploads-ssl.webflow.com/62e3ee1…/631a5d4…_noise-50.png);
+    background-image: url(./images/631a5d4631d4c55a475f3e34_noise-50.png);
     background-position: 0px 0px;
     background-size: 400px;
     width: 100%;
