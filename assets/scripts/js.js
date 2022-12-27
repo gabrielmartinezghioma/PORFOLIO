@@ -13,7 +13,7 @@ parallax.addEventListener('mousemove', e => {
     translate(
         ${x / sFront}%, 
         ${y / sFront}%
-    )`; 
+    )`;
 
     back.style.transform = `
     translate(
@@ -21,5 +21,14 @@ parallax.addEventListener('mousemove', e => {
         ${y / sBack}%
      )`;
 });
+
+let counter=1;
+setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 4 ){
+        counter = 1;
+    }
+},8000);
 
 
