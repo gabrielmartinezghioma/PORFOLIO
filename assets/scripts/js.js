@@ -2,8 +2,8 @@ const parallax = document.querySelector('.section__article--parallax');
 const front = document.querySelector('.article--front');
 const back = document.querySelector('.article--back');
 
-const sFront = 70;
-const sBack = 150;
+const sFront = 150;
+const sBack = 400;
 
 parallax.addEventListener('mousemove', e => {
     const x = e.clientX;

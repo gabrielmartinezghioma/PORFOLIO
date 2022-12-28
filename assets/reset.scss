@@ -11,8 +11,11 @@
   
   @media (prefers-contrast: high) {
     :root {
-      --color-primario: black;
-      --color-secundario: white;
+      --primary--color: white;
+      --secondary--color: salmon;
+      --tertiary--color: grey;
+      --quarter--color:darkgrey;
+      --fifth--color:  red;
     }
   }
    
