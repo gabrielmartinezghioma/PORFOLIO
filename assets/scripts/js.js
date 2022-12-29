@@ -1,3 +1,9 @@
+
+
+
+
+
+// slider auto
 let counter=1;
 setInterval(function(){
     document.getElementById('radio' + counter).checked = true;

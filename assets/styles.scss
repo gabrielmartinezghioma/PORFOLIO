@@ -234,6 +234,10 @@
     position: absolute;
     inset: 0;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .section__article--div::before{
@@ -277,6 +281,8 @@
         rotate: 0deg;
     }
 }
+
+
 
 .main {
     display: flex;
