@@ -165,11 +165,10 @@
 }
 
 .article__div--a {
-    margin-top: 5%;
+    
     padding: 0.75rem 0.6rem 0.6rem 0.75rem;
     border-radius: 0.31rem;
     background-color: var(--fifth--color);
-    -webkit-transition: opacity 200ms ease;
     transition: opacity 200ms ease;
     color: #16171b;
     font-family: var(--type-principal);
@@ -179,7 +178,7 @@
     cursor: pointer;
     z-index: 2;
     font-size: 1.5vw;
-    margin-top: 10%;
+    margin-top: 20%;
 }
 
 .section__article--animate{
@@ -203,15 +202,15 @@
 
 .article__ul--li{
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 5.90vw;
+    height: 5.90vw;
     border-radius: 50%;
     transition: 0.5s;
     box-shadow: 0 0 0 4px var(--primary--color), 0 0 0 4px var(--primary--color) ;
     transform: rotate(calc(360deg/5*var(--i)));
-    transform-origin: 285px;
+    transform-origin: 21.5vw;
     overflow: hidden;
-    font-size: 50px;
+    font-size: 3.90vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -297,8 +296,8 @@
 }
 
 .article__div--ulCard{
-    width: 220px;
-    height: 220px;
+    width: 17.1875vw;
+    height: 17.1875vw;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -307,28 +306,28 @@
 }
 
 .ul__li--img{
-    width: 60px;
-    height: 60px;
+    width: 4.6875vw;
+    height: 4.6875vw;
     margin: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+ 
 }
 
 .ul__li--a{
     border-radius: 15px;
-    width: 60px;
-    height: 60px;
+    width: 4.6875vw;
+    height: 4.6875vw;
 }
 
 .li__a--img{
-    max-width: 60px;
-    max-height: 60px;
+    min-width: 4.6875vw;
+    height: 4.6875vw;
 }
 .div__ul--li{
     font-family: var(--type-secondary);
-    font-size: 18px;
+    font-size: 1.4vw;
     color: var(--secondary--color);
     margin: 5px;
 }
@@ -773,14 +772,14 @@
     line-height: 0.8;
 }
 
-@media screen and (max-width: 990px) {
-    .article__div--h1 {
-        font-size: 9vw;
-    }
+// @media screen and (max-width: 990px) {
+//     .article__div--h1 {
+//         font-size: 9vw;
+//     }
 
-    .article__div--a {
-        font-size: 4vw;
-    }
-}
+//     .article__div--a {
+//         font-size: 4vw;
+//     }
+// }
 
-@media screen and (max-width: 768px) {}
+// @media screen and (max-width: 768px) {}
