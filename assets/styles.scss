@@ -165,6 +165,10 @@
     z-index: 2;
 }
 
+.article__div--h2Span{
+    font-size: 3vw;
+}
+
 .section__article--animate {
     width: 35vw;
     height: 35vw;
@@ -911,6 +915,9 @@
         text-align: center;
     }
 
+    .article__div--h2Span{
+        font-size: 3.375vw ;
+    }
 
     .section__article--aButton {
         justify-self: center;
