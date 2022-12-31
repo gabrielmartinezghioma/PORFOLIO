@@ -1037,9 +1037,7 @@
     }
 
     .li__div--porfolio {
-      
         top: 72%;
-    
     }
 
 
@@ -1048,7 +1046,16 @@
     }
 
     .section__ul--li{
+        height: 300px;
         padding: 15px;
+        align-items: flex-start;
+    }
+
+    .ul__li--h3{
+        font-size: 120%;
+    }
+    .ul__li--p {
+        font-size: 100%; 
     }
 
 
