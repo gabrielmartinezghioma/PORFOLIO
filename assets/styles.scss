@@ -953,4 +953,65 @@
 
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+
+    .article__div--h2,.article__h1{
+        font-size: 8vw;
+    }
+
+    .article__div--h2Span {
+        font-size: 6vw;
+    }
+
+
+    .section__article--animate {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .article__ul--li {
+        width: 12.41vw;
+        height: 12.41vw;
+        transform-origin: 45.25vw;
+        font-size: 8.20vw;
+    }
+
+    .section__article--div::before {
+        inset: 10vw;
+    }
+
+    .section__article--div::after {
+        inset: 16vw;
+    }
+
+    .article__div--ulCard {
+        width: 36.18vw;
+        height: 36.18vw;
+    }
+    
+    .ul__li--img {
+        width: 9.86vw;
+        height: 9.86vw;
+    }
+    
+    .ul__li--a {
+        width: 9.86vw;
+        height: 9.86vw;
+    }
+    
+    .li__a--img {
+        min-width: 9.86vw;
+    }
+    
+    .div__ul--li {
+        font-size: 2.94vw;
+    }
+
+    .section__article--aButton {
+      
+        font-size: 6vw;
+       
+    }
+
+
+}
