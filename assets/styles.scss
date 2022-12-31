@@ -944,7 +944,7 @@
 
     .li--Manual,
     .li--btnAuto {
-        padding: 15px;
+        padding: 8px;
         border-radius: 50%;
     }
 
@@ -1009,9 +1009,47 @@
     }
 
     .section__article--aButton {
-      
         font-size: 6vw;
+    }
+
+    .main__section--AcercadeMi {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .main__section--article {
        
+        width: 90%;
+        margin: 20px;
+    
+    
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .section__article--icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 20vw;
+        column-gap: 30px;
+    }
+
+    .li__div--porfolio {
+      
+        top: 72%;
+    
+    }
+
+
+    .div__p--porfolio{
+        display: none;
+    }
+
+    .section__ul--li{
+        padding: 15px;
     }
 
 
