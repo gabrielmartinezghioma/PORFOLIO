@@ -437,7 +437,7 @@
     font-weight: 300;
     font-family: var(--type-principal);
     font-weight: 300;
-    margin-top: 40px;
+    margin: 40px 0 20px 0;
     text-align: center;
 }
 
@@ -845,9 +845,16 @@
 }
 
 .section__article--aContacto {
+    background-color: var(--quarter--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
     font-size: 120px;
     width: 120px;
     height: 140px;
+    padding: 40%;
+    margin: 20px;
 }
 
 .section__article--h3 {
