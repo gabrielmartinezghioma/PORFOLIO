@@ -990,6 +990,10 @@
         height: 36.18vw;
     }
 
+    .article__div--ulCard li:nth-child(3) {
+        display: none;
+    }
+
     .ul__li--img {
         width: 9.86vw;
         height: 9.86vw;
@@ -1001,11 +1005,11 @@
     }
 
     .li__a--img {
-        min-width: 9.86vw;
+        min-width: 12vw;
     }
 
     .div__ul--li {
-        font-size: 2.94vw;
+        font-size: 5vw;
     }
 
     .section__article--aButton {
