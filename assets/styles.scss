@@ -883,7 +883,8 @@
         width: 100%;
         height: auto;
         font-size: 140%;
-        top: -80vh;
+        left: 100vw;
+        top:10vh;
         flex-direction: column;
         align-items: flex-start;
         row-gap: 40px;
@@ -896,7 +897,7 @@
     }
 
     .nav__ul--toggle{
-        top: 10vh;
+        left: 0;
         transition: all 1s;
     }
 
