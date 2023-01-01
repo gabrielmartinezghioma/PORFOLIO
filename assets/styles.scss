@@ -882,7 +882,7 @@
         z-index: 1;
         width: 100%;
         height: auto;
-        font-size: 140%;
+        font-size: 120%;
         left: 100vw;
         top:10vh;
         flex-direction: column;
@@ -900,8 +900,6 @@
         left: 0;
         transition: all 1s;
     }
-
-  
 
     .section {
         grid-template-columns: 3fr;
