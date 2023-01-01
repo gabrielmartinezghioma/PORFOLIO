@@ -162,6 +162,7 @@
     font-size: 4vw;
     line-height: 1.4;
     font-weight: 300;
+    cursor: pointer;
     z-index: 2;
 }
 
@@ -406,7 +407,6 @@
     font-size: 20px;
     align-self: flex-start;
     margin-bottom: 40px;
-    cursor: pointer;
     font-family: var(--type-secondary);
     font-weight: 200;
 }
