@@ -3,11 +3,28 @@ let navDivMenuResponsive = document.querySelector('.nav__div--menuResponsive');
 
 let navUl = document.querySelector('.nav__ul');
 
+let navUlLi1 = document.querySelector('.nav__ul--li1');
+
+let navUlLi = document.querySelector('.nav__ul--li');
+
+
+
 
 navDivMenuResponsive.addEventListener('click', () => {
     navUl.classList.toggle('nav__ul--toggle')
 
 })
+
+navUlLi1.addEventListener('click', () => {
+    navUl.classList.toggle('nav__ul--toggle')
+
+})
+
+navUlLi.addEventListener('click', () => {
+    navUl.classList.toggle('nav__ul--toggle')
+
+})
+
 
 
 
