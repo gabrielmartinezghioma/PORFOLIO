@@ -1,14 +1,8 @@
 //menu
 let navDivMenuResponsive = document.querySelector('.nav__div--menuResponsive');
-
 let navUl = document.querySelector('.nav__ul');
-
 let navUlLi1 = document.querySelector('.nav__ul--li1');
-
-let navUlLi = document.querySelector('.nav__ul--li');
-
-
-
+let navUlLi = document.querySelectorAll('.nav__ul--li');
 
 navDivMenuResponsive.addEventListener('click', () => {
     navUl.classList.toggle('nav__ul--toggle')
@@ -20,25 +14,17 @@ navUlLi1.addEventListener('click', () => {
 
 })
 
-navUlLi.addEventListener('click', () => {
-    navUl.classList.toggle('nav__ul--toggle')
-
-})
-
-
-
-
-
-
-
-
-
+for(let i=0; i<navUlLi.length;i++){
+    navUlLi[i].addEventListener('click', () => {
+        navUl.classList.toggle('nav__ul--toggle')
+    
+    })
+}
 
 
 //header
 let articleUlLi = document.querySelectorAll('.article__ul--li')
 let articleDivBx = document.querySelectorAll('.article__div--Bx')
-
 
 for (let i = 0; i < articleDivBx.length; i++) {
     articleUlLi[i].addEventListener('mouseover', function () {
