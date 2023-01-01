@@ -610,7 +610,7 @@
 
 .li__div--porfolio {
     position: absolute;
-    top: 50%;
+    top: 64%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -626,17 +626,20 @@
 }
 
 .div__h2--porfolio {
-    font-size: 180%;
+    font-size: 130%;
     font-family: var(--type-principal);
     font-weight: 300;
     color: var(--primary--color);
-    margin: 0 0 2px 60px;
+    margin: 10px 0 10px 60px;
     align-self: flex-start;
+    text-transform: uppercase;
+    background-color: var(--fifth--color);
+    padding: 5px;
+    border-radius: 10px;
 }
 
 .div__h2--porfolio:hover {
     transform: translateY(-5px);
-    color: var(--fifth--color);
     cursor: pointer;
     transition: all 1s;
 }
@@ -646,12 +649,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
-    font-size: 180%;
-    border-radius: 50%;
-    margin: 0 0 5px 60px;
-    background-color: var(--quarter--color);
+    font-size: 220%;
+    margin: 0 0 10px 60px;
 }
 
 .div__h3--porfolio {
@@ -937,14 +936,21 @@
         width: 90vw;
     }
 
+    .li__div--porfolio {
+        top: 66%;
+    }
+
+  
+
     .li--navigationManual,
     .li--navigationAuto {
         margin-top: 80vw;
+        column-gap: 20px;
     }
 
     .li--Manual,
     .li--btnAuto {
-        padding: 8px;
+        padding: 5px;
         border-radius: 50%;
     }
 
@@ -988,6 +994,7 @@
     .article__div--ulCard {
         width: 36.18vw;
         height: 36.18vw;
+    
     }
 
     .article__div--ulCard li:nth-child(3) {
@@ -1041,17 +1048,17 @@
     }
 
     .li__div--porfolio {
-        top: 72%;
+        top: 75%;
     }
 
     .div__h2--porfolio {
-        font-size: 130%;
+        font-size: 110%;
         margin: 0 0 10px 10px;
         text-transform: uppercase;
     }
 
     .div__a--portafolio, .div__h3--porfolio, .div__ul--icons, .div__p--porfolio{
-        margin: 0 0 10px 10px;
+        margin: 10px 0 10px 10px;
     }
     .div__p--porfolio {
         display: none;
