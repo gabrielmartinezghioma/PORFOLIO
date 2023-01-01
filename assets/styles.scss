@@ -610,7 +610,7 @@
 
 .li__div--porfolio {
     position: absolute;
-    top: 64%;
+    top: 25vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -671,26 +671,19 @@
     margin: 10px 10px 10px 60px;
 }
 
-.div__ul--liIcons {
-    width: 40px;
-    height: 40px;
-    background-color: var(--quarter--color);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 2px 0 0;
-}
+
 
 .div__ul--liIcons:hover {
-    background-color: var(--fifth--color);
+    transform: translateY(-10px);
     transition: all 1s;
     cursor: pointer;
 }
 
 .ul__li--imgPorfolio {
-    width: 25px;
-    height: 25px;
+    margin: 10px 5px 10px 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 
 .div__p--porfolio {
@@ -937,7 +930,7 @@
     }
 
     .li__div--porfolio {
-        top: 66%;
+        top: 45vw;
     }
 
   
@@ -1048,7 +1041,7 @@
     }
 
     .li__div--porfolio {
-        top: 75%;
+        top: 50vw;
     }
 
     .div__h2--porfolio {
