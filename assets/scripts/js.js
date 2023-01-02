@@ -3,6 +3,7 @@ let navDivMenuResponsive = document.querySelector('.nav__div--menuResponsive');
 let navUl = document.querySelector('.nav__ul');
 let navUlLi1 = document.querySelector('.nav__ul--li1');
 let navUlLi = document.querySelectorAll('.nav__ul--li');
+let navDiv = document.querySelector('.nav__div');
 let header = document.querySelector('header');
 let main = document.querySelector('main');
 let footer= document.querySelector('footer');
@@ -23,6 +24,10 @@ for(let i=0; i<navUlLi.length;i++){
     
     })
 }
+
+navDiv.addEventListener('click', () => {
+    navUl.classList.remove('nav__ul--toggle')
+})
 
 header.addEventListener('click', () => {
     navUl.classList.remove('nav__ul--toggle')
