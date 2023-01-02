@@ -880,26 +880,28 @@
         position: absolute;
         z-index: 1;
         width: 100%;
-        height: 0;
+        height: 0vh;
         overflow: hidden;
         font-size: 120%;
         top: 10vh;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: center;
+        justify-content: space-between;
         row-gap: 40px;
         background-color: #16171b;
         background-image: url(./images/631a5d4631d4c55a475f3e34_noise-50.png);
         background-position: 0 0;
         background-size: 200px 200px;
+        padding: 0 0 0 2%;
         transition: all 1s;
+
     }
 
     .nav__ul--toggle {
-        height: auto;
+        height: 55vh;
+        overflow: scroll;
         transition: all 1s;
-        overflow: visible;
-        padding: 0 0 40px 2%;
+        padding: 20px 0 40px 2%;
     }
 
     .section {
