@@ -886,7 +886,7 @@
         top: 10vh;
         flex-direction: column;
         align-items: flex-start;
-        justify-content: space-between;
+        justify-content: space-around;
         row-gap: 40px;
         background-color: #16171b;
         background-image: url(./images/631a5d4631d4c55a475f3e34_noise-50.png);
@@ -901,7 +901,7 @@
         height: 60vh;
         overflow: scroll;
         transition: height 0.5s;
-        padding: 20px 0 40px 2%;
+        padding: 0 0 0 2%;
     }
 
     .section {
