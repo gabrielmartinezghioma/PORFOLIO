@@ -880,9 +880,9 @@
         position: absolute;
         z-index: 1;
         width: 100%;
-        height: auto;
+        height: 0;
+        overflow: hidden;
         font-size: 120%;
-        left: 100vw;
         top:10vh;
         flex-direction: column;
         align-items: flex-start;
@@ -892,12 +892,13 @@
         background-position: 0 0;
         background-size: 200px 200px;
         padding: 0 0 40px 2%;
-        transition: all 1s;
+        transition: height 1s;
     }
 
     .nav__ul--toggle{
-        left: 0;
-        transition: all 1s;
+        height: calc(auto+0.01px);
+        transition: height 1s;
+        overflow: visible;
     }
 
     .section {
