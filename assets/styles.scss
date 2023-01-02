@@ -893,14 +893,14 @@
         background-position: 0 0;
         background-size: 200px 200px;
         padding: 0 0 0 2%;
-        transition: all 1s;
+        transition: height 1s;
 
     }
 
     .nav__ul--toggle {
-        height: 55vh;
+        height: 60vh;
         overflow: scroll;
-        transition: all 1s;
+        transition: height 0.5s;
         padding: 20px 0 40px 2%;
     }
 
