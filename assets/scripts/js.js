@@ -3,6 +3,9 @@ let navDivMenuResponsive = document.querySelector('.nav__div--menuResponsive');
 let navUl = document.querySelector('.nav__ul');
 let navUlLi1 = document.querySelector('.nav__ul--li1');
 let navUlLi = document.querySelectorAll('.nav__ul--li');
+let header = document.querySelector('header');
+let main = document.querySelector('main');
+let footer= document.querySelector('footer');
 
 navDivMenuResponsive.addEventListener('click', () => {
     navUl.classList.toggle('nav__ul--toggle')
@@ -21,8 +24,20 @@ for(let i=0; i<navUlLi.length;i++){
     })
 }
 
+header.addEventListener('click', () => {
+    navUl.classList.remove('nav__ul--toggle')
+})
 
-//header
+main.addEventListener('click', () => {
+    navUl.classList.remove('nav__ul--toggle')
+})
+
+footer.addEventListener('click', () => {
+    navUl.classList.remove('nav__ul--toggle')
+})
+
+
+//header animation
 let articleUlLi = document.querySelectorAll('.article__ul--li')
 let articleDivBx = document.querySelectorAll('.article__div--Bx')
 
