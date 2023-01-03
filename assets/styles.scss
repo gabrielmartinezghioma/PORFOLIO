@@ -609,10 +609,10 @@
 
 .li__div--porfolio {
     position: absolute;
-    top: 25vw;
+    top: 20vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-start;
     width: 100%;
     height: 100%;
@@ -690,7 +690,7 @@
     font-size: 120%;
     font-family: var(--type-secondary);
     font-weight: 200;
-    margin: 20px 10px 0 60px;
+    margin: 5px 10px 0 60px;
 }
 
 .ul__input {
@@ -953,7 +953,7 @@
     }
 
     .li__div--porfolio {
-        top: 45vw;
+        top: 29vw;
     }
 
     .li--navigationManual,
@@ -1062,7 +1062,7 @@
     }
 
     .li__div--porfolio {
-        top: 50vw;
+        top: 47vw;
     }
 
     .div__h2--porfolio {
