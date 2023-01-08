@@ -140,7 +140,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     z-index: 3;
 }
 
@@ -149,9 +149,7 @@
     font-size: 4vw;
     line-height: 1.4;
     font-weight: 300;
-    color: var(--secondary--color);
     text-align: start;
-    cursor: pointer;
     z-index: 2;
     text-align: start;
 }
@@ -162,7 +160,7 @@
     font-size: 4vw;
     line-height: 1.4;
     font-weight: 300;
-    cursor: pointer;
+    color: var(--secondary--color);
     z-index: 2;
 }
 
@@ -390,7 +388,6 @@
     font-size: 187.5%;
     align-self: flex-start;
     margin: 30px 0;
-    cursor: pointer;
     font-family: var(--type-principal);
     font-weight: 300;
     text-align: center;
@@ -399,7 +396,7 @@
 .article__h2:hover {
     color: var(--secondary--color);
     transition: 0.5s;
-    cursor: pointer;
+    cursor: default;
 }
 
 .article__p {
@@ -446,7 +443,7 @@
 .section__h2--big:hover {
     color: var(--secondary--color);
     transition: 0.5s;
-    cursor: pointer;
+    cursor: default;
 }
 
 .main__section--MisHabilidades {
@@ -480,12 +477,12 @@
     background-size: 200px, auto;
     border-radius: 15px;
     padding: 30px 30px;
+    transition: all 0.5s;
 }
 
 .section__ul--li:hover {
-    background-color: var(--tertiary--color);
-    transition: 1s background-color;
-    cursor: pointer;
+    transform: translateY(-10px);
+    cursor: default;
 }
 
 .section__ul--div {
@@ -508,11 +505,21 @@
     margin-bottom: 22px;
 }
 
+.ul__li--h3::selection {
+    color: var(--fifth--color);
+    background-color: transparent;
+
+}
+
 .ul__li--p {
     font-family: var(--type-secondary);
     font-size: 125%;
     font-weight: 200;
+}
 
+.ul__li--p::selection{
+    color: var(--sixth--color);
+    background-color: transparent;
 }
 
 .main__section--misEstudios {
@@ -535,13 +542,12 @@
     font-size: 187.5%;
     align-self: flex-start;
     margin: 30px 30px 10px 30px;
-    cursor: pointer;
+    cursor: default;
 }
 
 .main__section--h2:hover {
     color: var(--secondary--color);
     transition: 0.5s;
-    cursor: pointer;
 }
 
 
@@ -639,7 +645,7 @@
 
 .div__h2--porfolio:hover {
     transform: translateY(-5px);
-    cursor: pointer;
+    cursor: default;
     transition: all 1s;
 }
 
@@ -670,12 +676,10 @@
     margin: 10px 10px 10px 60px;
 }
 
-
-
 .div__ul--liIcons:hover {
     transform: translateY(-10px);
     transition: all 1s;
-    cursor: pointer;
+    cursor: default;
 }
 
 .ul__li--imgPorfolio {
@@ -810,7 +814,7 @@
 .main__footer--h2:hover {
     color: var(--secondary--color);
     transition: 0.5s;
-    cursor: pointer;
+    cursor: default;
 }
 
 .section__article--contacto {
@@ -894,7 +898,6 @@
         background-size: 200px 200px;
         padding: 0 0 0 2%;
         transition: height 0.5s;
-
     }
 
     .nav__ul--toggle {
@@ -925,18 +928,67 @@
 
     .article__div--h2,
     .article__h1 {
-        font-size: 4.5vw;
+        font-size: 7vw;
     }
 
-    .article__div--h2Span {
-        font-size: 3.375vw;
+    .section__article--animate {
+        width: 70vw;
+        height: 70vw;
+    }
+
+    .article__ul--li {
+        width: 10.85vw;
+        height: 10.85;
+        transform-origin: 39.59vw;
+        font-size: 7.17vw;
+    }
+
+    .section__article--div::before {
+        inset: 8.83vw;
+    }
+
+    .section__article--div::after {
+        inset: 14vw;
+    }
+
+    .article__div--ulCard {
+        width: 31.65vw;
+        height: 31.65vw;
+
+    }
+
+     .article__ul--li {
+        width: 10.17vw;
+        height: 10.17vw;
+        transform-origin: 40vw;
+        font-size: 6vw;
+    }
+
+    .ul__li--img {
+        width: kuvw;
+        height: 8.26vw;
+    }
+
+    .ul__li--a {
+        width: 8.26vw;
+        height: 8.26vw;
+    }
+
+    .li__a--img {
+        min-width: 10.5vw;
+    }
+
+    .div__ul--li {
+        font-size: 2.8vw;
+        margin-top: 5%;
     }
 
     .section__article--aButton {
         justify-self: center;
         align-self: center;
         margin: 0;
-        font-size: 2.5vw
+        font-size: 4vw;
+        margin-top: 10%;
     }
 
     .section__article--icons {
@@ -945,11 +997,11 @@
     }
 
     .section__ul--liNone {
-        display: none;
+        display: block;
     }
 
     .section__ul--porfolio {
-        width: 90vw;
+        width: 100vw;
     }
 
     .li__div--porfolio {
