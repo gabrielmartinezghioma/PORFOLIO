@@ -1,5 +1,4 @@
 :root {
-    /* Colores */
     --primary--color: #ffffff;
     --secondary--color: #F48E6C;
     --tertiary--color: rgba(255, 255, 255, 0.534);
@@ -21,7 +20,6 @@
     }
   }
    
-  /* Reseteo margin y paddings */
   *,
   *::before,
   *::after {
@@ -37,7 +35,6 @@
     display: block;
   }
   
-  /* multimedia */
   img,
   picture,
   video,
@@ -48,7 +45,6 @@
     display: block;
   }
   
-  /* Reseteamos de enlaces para funcionar como cajas */
   a {
     display: block;
     text-decoration: none;
@@ -56,22 +52,18 @@
     font-size: inherit;
   }
   
-  /* ... excepto los que se encuentran en párrafos */
   p a {
     display: inline;
   }
   
-  /* puntos de los <li> */
   li {
     list-style-type: none;
   }
   
-  /* (Opcional) Configuramos anclas suaves */
   html {
     scroll-behavior: smooth;
   }
-  
-  /* Desactivamos estilos por defecto de las principales etiquetas de texto */
+
   h1,
   h2,
   h3,
@@ -94,7 +86,6 @@
     color: inherit;
   }
   
-  /* Evitamos problemas con los pseudoelementos de quotes */
   blockquote:before,
   blockquote:after,
   q:before,
@@ -102,14 +93,12 @@
     content: '';
     content: none;
   }
-  
-  /* (Opcional) Configuramos el texto que seleccionamos */
+
   ::selection {
     background-color: var(--tertiary--color);
     color: var(--primary--color);
   }
   
-  /* Nivelamos problemas de tipografías y colocación de formularios */
   form,
   input,
   textarea,
@@ -123,7 +112,6 @@
     display: block;
   }
   
-  /* Reseteamos las tablas */
   table,
   tr,
   td {
@@ -131,14 +119,12 @@
     border-spacing: 0;
   }
   
-  /* Evitamos problemas con los SVG */
   svg {
     width: 100%;
     display: block;
     fill: currentColor;
   }
   
-  /* Configuramos la tipografía para toda la web */
   body {
     min-height: 100vh;
     font-size: 100%;
