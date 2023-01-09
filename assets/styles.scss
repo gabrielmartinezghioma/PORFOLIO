@@ -469,14 +469,13 @@
 
 .section__ul::-webkit-scrollbar {
     height: 5px;
-    color: red;
 }
 
 .section__ul::-webkit-scrollbar-track {
     display: none;
 }
 
-.section__ul::-webkit-scrollbar-thumb {
+.section__ul:hover::-webkit-scrollbar-thumb {
     background-color: var(--secondary--color);
     border-radius: 10px;
 }
