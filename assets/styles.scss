@@ -475,7 +475,7 @@
     display: none;
 }
 
-.section__ul:hover::-webkit-scrollbar-thumb {
+.section__ul::-webkit-scrollbar-thumb {
     background-color: var(--secondary--color);
     border-radius: 10px;
 }
