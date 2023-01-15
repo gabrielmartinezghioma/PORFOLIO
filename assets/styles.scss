@@ -367,26 +367,27 @@
     align-items: center;
     width: 100%;
     height: auto;
-    background-image: url(./images/631a5d4631d4c55a475f3e34_noise-50.png), linear-gradient(90deg, #42312c, #452225);
-    background-position: 0px 0px, 0px 0px;
-    background-size: 200px, auto;
-    border-radius: 15px;
-    margin: 30px 0;
 }
+
 
 .main__section--article {
     display: flex;
     flex-direction: column;
+    background-image: url(./images/631a5d4631d4c55a475f3e34_noise-50.png), linear-gradient(90deg, #42312c, #452225);
+    background-position: 0px 0px, 0px 0px;
+    background-size: 200px, auto;
+    border-radius: 15px;
     width: 80%;
+    margin: 0 0 30px 0;
+    padding: 5%;
     height: auto;
     justify-content: center;
     align-items: center;
 }
 
 .article__h2 {
-    font-size: 187.5%;
-    align-self: flex-start;
-    margin: 20px 0;
+    font-size: 240%;
+    margin: 30px 0;
     font-family: var(--type-principal);
     font-weight: 300;
     text-align: center;
@@ -419,7 +420,7 @@
     margin: 40px 0 30px 0;
 }
 
-.section__article--icons {
+.section__artn__ulicle--icons {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -430,7 +431,7 @@
     height: 100%;
 }
 
-section__h2--bi .main__section--MisHabilidades {
+.main__section--MisHabilidades {
     width: 100%;
     height: auto;
     display: flex;
@@ -442,7 +443,7 @@ section__h2--bi .main__section--MisHabilidades {
 .section__ul {
     width: 100%;
     height: 600px;
-    margin: 40px 0 40px 0;
+    margin: 0 0 30px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -530,6 +531,89 @@ section__h2--bi .main__section--MisHabilidades {
     color: var(--sixth--color);
     background-color: transparent;
 }
+
+
+.section__ul--liProjects {
+    display: none;
+}
+
+.section__ul--liProjects.active {
+    display: block;
+}
+
+.main__section--porfolio {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.section__ul--projects {
+    width: 100%;
+}
+
+.section__ul--liProjects {
+    width: 100%;
+}
+
+.ul__li--divProjects {
+    display: flex;
+    width: 90vw;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2%;
+    border: 1px solid var(--primary--color);
+    padding: 2%;
+    border-radius: 1rem;
+}
+
+.ul__li--imgProjects {
+    width: 65vw;
+    height: 65vh;
+    border-radius: 1rem;
+    padding: 0%;
+}
+
+.li__div--divProjects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    background-image: url(./images/631a5d4631d4c55a475f3e34_noise-50.png), linear-gradient(90deg, var(--quarter--color), var(--quarter--color));
+    background-position: 0px 0px, 0px 0px;
+    background-size: 200px, auto;
+    border-radius: 1rem; 
+    width: 35vw,35vw;
+    height: 65vh;
+    overflow-y: hidden;
+}
+
+.li__div--h2Projects {
+    color: var(--fifth--color);
+    font-family: var(--type-principal);
+    font-size: 220%;
+    margin: 5%;
+}
+
+.li__div--pProjects {
+    padding: 2% 10%;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .footer {
