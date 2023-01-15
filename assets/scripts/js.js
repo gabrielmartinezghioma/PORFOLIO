@@ -60,71 +60,68 @@ for (let i = 0; i < articleDivBx.length; i++) {
     })
 }
 
-// Obtener elementos del DOM
-const slider = document.querySelector('.section__ul--projects');
-const slides = document.querySelectorAll('.section__ul--liProjects');
-const prevBtn = document.querySelector('.prev-btn');
-const nextBtn = document.querySelector('.next-btn');
+const slider = document.querySelector(".section__ul--projects");
+const slides = document.querySelectorAll(".section__ul--liProjects");
+const prevBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".next-btn");
 
-let currentSlide = 0;
+let index = 0;
 let slideInterval;
-let touchStartX = 0;
-let touchEndX = 0;
 
-// Función para iniciar el auto movimiento
-function startSlideshow() {
-    slideInterval = setInterval(nextSlide, 400000);
+function startSlider() {
+    slideInterval = setInterval(() => {
+        nextSlide();
+    }, 8000);
 }
 
-// Función para mostrar la siguiente diapositiva
-function nextSlide() {
-    slides[currentSlide].classList.remove('active');
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].classList.add('active');
-}
-
-// Función para mostrar la diapositiva anterior
-function prevSlide() {
-    slides[currentSlide].classList.remove('active');
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    slides[currentSlide].classList.add('active');
-}
-
-// Función para detener el auto movimiento
-function stopSlideshow() {
+function pauseSlider() {
     clearInterval(slideInterval);
 }
 
-// Función para manejar el gesto de deslizar
-function handleSwipe() {
-    if (touchEndX < touchStartX) {
-        nextSlide();
+function nextSlide() {
+    slides[index].classList.remove("active");
+    index++;
+    if (index === slides.length) {
+        index = 0;
     }
-    if (touchEndX > touchStartX) {
-        prevSlide();
-    }
+    slides[index].classList.add("active");
 }
 
-// Iniciar auto movimiento
-startSlideshow();
+function prevSlide() {
+    slides[index].classList.remove("active");
+    index--;
+    if (index < 0) {
+        index = slides.length - 1;
+    }
+    slides[index].classList.add("active");
+}
 
-// Agregar evento touchstart para dispositivos táctiles
-slider.addEventListener('touchstart', (e) => {
-    touchStartX = e.changedTouches[0].clientX;
-    stopSlideshow();
-});
+prevBtn.addEventListener("click", prevSlide);
+nextBtn.addEventListener("click", nextSlide);
 
-// Agregar evento touchend para dispositivos táctiles
-slider.addEventListener('touchend', (e) => {
-    touchEndX = e.changedTouches[0].clientX;
-    handleSwipe();
-    startSlideshow();
-});
+slider.addEventListener("mouseenter", pauseSlider);
+slider.addEventListener("mouseleave", startSlider);
 
-// Agregar evento mouseover y mouseout para escritorio
-slider.addEventListener('mouseover', stopSlideshow);
-slider.addEventListener('mouseout', startSlideshow);
+startSlider();
 
+// Touch events for mobile
+let initialX = null;
+let finalX = null;
 
-prevBtn.addEventListener('click', prevSlide);
-nextBtn.addEventListener('click', nextSlide);
+function handleTouchStart(e) {
+    initialX = e.touches[0].clientX;
+    clearInterval(slideInterval);
+}
+
+function handleTouchEnd(e) {
+    finalX = e.changedTouches[0].clientX;
+    if (initialX > finalX) {
+        nextSlide();
+    } else {
+        prevSlide();
+    }
+    startSlider();
+}
+
+slider.addEventListener("touchstart", handleTouchStart);
+slider.addEventListener("touchend", handleTouchEnd);
