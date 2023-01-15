@@ -594,7 +594,8 @@
     overflow: hidden;
     position: relative;
     margin: 10px 0 160px 0;
-    width: 45vw;
+    width: 65vw;
+    height: auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -615,7 +616,7 @@
 }
 
 .article__img--porfolio {
-    width: 100%;
+    width: 65vw;
     border-radius: 15px;
     z-index: -1;
 }
@@ -639,7 +640,7 @@
 
 .li__div--porfolio {
     position: absolute;
-    top: 20vw;
+    top: 16vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;

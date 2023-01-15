@@ -62,13 +62,13 @@ for (let i = 0; i < articleDivBx.length; i++) {
 
 
 // slider auto
-let counter = 1;
-setInterval(function () {
-    document.getElementById('radio' + counter).checked = true;
-    counter++;
-    if (counter > 4) {
-        counter = 1;
-    }
-}, 8000);
+// let counter = 1;
+// setInterval(function () {
+//     document.getElementById('radio' + counter).checked = true;
+//     counter++;
+//     if (counter > 4) {
+//         counter = 1;
+//     }
+// }, 8000);
 
 
