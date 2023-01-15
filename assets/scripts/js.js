@@ -63,6 +63,8 @@ for (let i = 0; i < articleDivBx.length; i++) {
 // Obtener elementos del DOM
 const slider = document.querySelector('.section__ul--projects');
 const slides = document.querySelectorAll('.section__ul--liProjects');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
 
 let currentSlide = 0;
 let slideInterval;
@@ -71,7 +73,7 @@ let touchEndX = 0;
 
 // Función para iniciar el auto movimiento
 function startSlideshow() {
-    slideInterval = setInterval(nextSlide, 1000);
+    slideInterval = setInterval(nextSlide, 400000);
 }
 
 // Función para mostrar la siguiente diapositiva
@@ -124,5 +126,5 @@ slider.addEventListener('mouseover', stopSlideshow);
 slider.addEventListener('mouseout', startSlideshow);
 
 
-
-
+prevBtn.addEventListener('click', prevSlide);
+nextBtn.addEventListener('click', nextSlide);
