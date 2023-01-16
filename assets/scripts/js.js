@@ -128,3 +128,41 @@ slider.addEventListener('mouseout', startSlideshow);
 
 prevBtn.addEventListener('click', prevSlide);
 nextBtn.addEventListener('click', nextSlide);
+
+
+// Initialize Firebase
+var firebaseConfig = {
+    apiKey: "YOUR_API_KEY",
+    authDomain: "YOUR_AUTH_DOMAIN",
+    databaseURL: "YOUR_DATABASE_URL",
+    projectId: "YOUR_PROJECT_ID",
+    storageBucket: "YOUR_STORAGE_BUCKET",
+    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+    appId: "YOUR_APP_ID"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+  
+  // Get a reference to the Firestore
+  var db = firebase.firestore();
+  
+  document.getElementById("send-comment").addEventListener("click", function(event) {
+    event.preventDefault();
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+  
+    // Add the comment to Firestore
+    db.collection("comments").add({
+      name: name,
+      email: email,
+      message: message
+    })
+    .then(function(docRef) {
+      console.log("Comment added with ID: ", docRef.id);
+      alert("Gracias por tu comentario!");
+    })
+    .catch(function(error) {
+      consoleerror("Error adding comment: ", error);
+    });
+  });

@@ -455,16 +455,17 @@
 }
 
 .section__ul::-webkit-scrollbar {
-    height: 8px;
+    height: 5px;
 }
 
 .section__ul::-webkit-scrollbar-track {
     display: none;
 }
+
 .section__ul::-webkit-scrollbar-thumb:hover {
     background-color: var(--sixth--color);
     border-radius: 7px;
-  }
+}
 
 .section__ul::-webkit-scrollbar-thumb {
     background-color: var(--secondary--color);
@@ -545,7 +546,8 @@
     justify-content: center;
     align-items: center;
 }
-.section__article--sllider{
+
+.section__article--sllider {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -565,14 +567,13 @@
 }
 
 .ul__li--divProjects {
-    
+
     display: flex;
     width: 90vw;
     height: 70vh;
     justify-content: center;
     align-items: center;
     column-gap: 2%;
-    border: 1px solid var(--primary--color);
     padding: 2%;
     border-radius: 1rem;
 }
@@ -599,32 +600,33 @@
 }
 
 .li__div--divProjects::-webkit-scrollbar {
-    width: 8px;
-  }
+    width: 5px;
+}
 
-  .li__div--divProjects::-webkit-scrollbar-track {
+.li__div--divProjects::-webkit-scrollbar-track {
     border: 1px solid transparent;
-  }
-  
-  .li__div--divProjects::-webkit-scrollbar-thumb {
-    background-color: var(--secondary--color);
-    border-radius: 8px;
-  }
- 
-  .li__div--divProjects::-webkit-scrollbar-thumb {
-    background-color: transparent;
-    border-radius: 8px;
-  }
+}
 
-  .section__ul--projects:hover .li__div--divProjects::-webkit-scrollbar-thumb {
+.li__div--divProjects::-webkit-scrollbar-thumb {
     background-color: var(--secondary--color);
-    border-radius: 8px;
-  }
-  .li__div--divProjects::-webkit-scrollbar-thumb:hover {
+    border-radius: 5px;
+}
+
+.li__div--divProjects::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.section__ul--projects:hover .li__div--divProjects::-webkit-scrollbar-thumb {
+    background-color: var(--secondary--color);
+    border-radius: 5px;
+}
+
+.li__div--divProjects::-webkit-scrollbar-thumb:hover {
     background-color: var(--sixth--color);
-    border-radius: 8px;
-  }
-  
+    border-radius: 5px;
+}
+
 
 .li__div--h2Projects {
     color: var(--fifth--color);
@@ -633,7 +635,7 @@
     margin: 2%;
 }
 
-.div__div--divProjects{
+.div__div--divProjects {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -642,15 +644,15 @@
     margin-bottom: 5%;
 }
 
-.a__buttton{
-    background-color: var( --fifth--color);
+.a__buttton {
+    background-color: var(--fifth--color);
     cursor: pointer;
     padding: 5%;
     width: 90px;
     border-radius: 1rem;
 }
 
-.a__buttton:hover{
+.a__buttton:hover {
     background-color: var(--secondary--color);
     transition: all 1s;
 }
@@ -671,9 +673,89 @@
 }
 
 
+.section--form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
+.section__article--comments {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    background-image: url(./images/631a5d4631d4c55a475f3e34_noise-50.png), linear-gradient(90deg, var(--quarter--color), var(--quarter--color));
+    background-position: 0px 0px, 0px 0px;
+    background-size: 200px, auto;
+    border-radius: 15px;
+    margin: 0 0 5% 0;
+    padding: 5% 5% 10% 5%;
+    transition: all 0.5s;
+}
 
+.section__article--divComments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    margin-right: 10%;
+}
 
+.article__div--pComments {
+    font-family: var(--type-secondary);
+    font-size: 120%;
+    font-weight: 200;
+    margin: 5%;
+}
+
+.section__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    justify-content: flex-start;
+    height: 400px;
+}
+
+.section__form--label {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.section__form--input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid var(--primary--color);
+    margin-top: 3%;
+    padding: 2%;
+}
+
+.section__textarea {
+    margin-top: 3%;
+    max-width: 40vw;
+    min-width: 40vw;
+    min-height: 180px;
+    max-height: 180px;
+    border: 1px solid var(--primary--color);
+    padding: 2%;
+}
+
+.section__form--button {
+    background-color: var(--fifth--color);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 5%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.section__form--button:hover {
+    background-color: var(--sixth--color);
+    transition: all 0.5s;
+}
 
 
 
@@ -907,17 +989,6 @@
 
 
 
-    .li--navigationManual,
-    .li--navigationAuto {
-        margin-top: 80vw;
-        column-gap: 20px;
-    }
-
-    .li--Manual,
-    .li--btnAuto {
-        padding: 5px;
-        border-radius: 50%;
-    }
 
     .section__article--contacto {
         flex-direction: column;
