@@ -129,3 +129,6 @@ slider.addEventListener('mouseout', startSlideshow);
 prevBtn.addEventListener('click', prevSlide);
 nextBtn.addEventListener('click', nextSlide);
 
+
+
+ 
