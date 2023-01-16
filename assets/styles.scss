@@ -744,6 +744,11 @@
     transition: all 0.5s;
 }
 
+.section__form--input::selection,
+.section__textarea::selection {
+    color: var(--sixth--color);
+    background-color: transparent;
+}
 
 
 
