@@ -60,68 +60,71 @@ for (let i = 0; i < articleDivBx.length; i++) {
     })
 }
 
-const slider = document.querySelector(".section__ul--projects");
-const slides = document.querySelectorAll(".section__ul--liProjects");
-const prevBtn = document.querySelector(".prev-btn");
-const nextBtn = document.querySelector(".next-btn");
+// Obtener elementos del DOM
+const slider = document.querySelector('.section__ul--projects');
+const slides = document.querySelectorAll('.section__ul--liProjects');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
 
-let index = 0;
+let currentSlide = 0;
 let slideInterval;
+let touchStartX = 0;
+let touchEndX = 0;
 
-function startSlider() {
-    slideInterval = setInterval(() => {
-        nextSlide();
-    }, 8000);
+// Función para iniciar el auto movimiento
+function startSlideshow() {
+    slideInterval = setInterval(nextSlide, 400000);
 }
 
-function pauseSlider() {
-    clearInterval(slideInterval);
-}
-
+// Función para mostrar la siguiente diapositiva
 function nextSlide() {
-    slides[index].classList.remove("active");
-    index++;
-    if (index === slides.length) {
-        index = 0;
-    }
-    slides[index].classList.add("active");
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
 }
 
+// Función para mostrar la diapositiva anterior
 function prevSlide() {
-    slides[index].classList.remove("active");
-    index--;
-    if (index < 0) {
-        index = slides.length - 1;
-    }
-    slides[index].classList.add("active");
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    slides[currentSlide].classList.add('active');
 }
 
-prevBtn.addEventListener("click", prevSlide);
-nextBtn.addEventListener("click", nextSlide);
-
-slider.addEventListener("mouseenter", pauseSlider);
-slider.addEventListener("mouseleave", startSlider);
-
-startSlider();
-
-// Touch events for mobile
-let initialX = null;
-let finalX = null;
-
-function handleTouchStart(e) {
-    initialX = e.touches[0].clientX;
+// Función para detener el auto movimiento
+function stopSlideshow() {
     clearInterval(slideInterval);
 }
 
-function handleTouchEnd(e) {
-    finalX = e.changedTouches[0].clientX;
-    if (initialX > finalX) {
+// Función para manejar el gesto de deslizar
+function handleSwipe() {
+    if (touchEndX < touchStartX) {
         nextSlide();
-    } else {
+    }
+    if (touchEndX > touchStartX) {
         prevSlide();
     }
-    startSlider();
 }
 
-slider.addEventListener("touchstart", handleTouchStart);
-slider.addEventListener("touchend", handleTouchEnd);
+// Iniciar auto movimiento
+startSlideshow();
+
+// Agregar evento touchstart para dispositivos táctiles
+slider.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].clientX;
+    stopSlideshow();
+});
+
+// Agregar evento touchend para dispositivos táctiles
+slider.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].clientX;
+    handleSwipe();
+    startSlideshow();
+});
+
+// Agregar evento mouseover y mouseout para escritorio
+slider.addEventListener('mouseover', stopSlideshow);
+slider.addEventListener('mouseout', startSlideshow);
+
+
+prevBtn.addEventListener('click', prevSlide);
+nextBtn.addEventListener('click', nextSlide);
