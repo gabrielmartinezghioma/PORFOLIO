@@ -211,18 +211,25 @@
     <h2 class="article__h2">Acerca de Mi</h2>
     <article class="main__section--article">
       <p class="article__p">
-        Como desarrollador web con una fuerte formación en matemáticas, física y álgebra, junto con experiencia en tecnologías clave como React JS, JavaScript, CSS, HTML y TypeScript, me han convertido en un profesional altamente capacitado para liderar proyectos y buscar soluciones innovadoras.
+        Como desarrollador web con una fuerte formación en matemáticas, física y álgebra, junto con experiencia en
+        tecnologías clave como React JS, JavaScript, CSS, HTML y TypeScript, me han convertido en un profesional
+        altamente capacitado para liderar proyectos y buscar soluciones innovadoras.
       </p>
 
       <p class="article__p">
-        Mi experiencia en materias científicas y matemáticas como álgebra, me ha brindado una formación lógica sólida, lo que me permite abordar problemas de manera metódica y resolverlos de manera eficiente. Me especializo en desarrollo web y siempre estoy buscando aprender nuevas tecnologías.
+        Mi experiencia en materias científicas y matemáticas como álgebra, me ha brindado una formación lógica sólida,
+        lo que me permite abordar problemas de manera metódica y resolverlos de manera eficiente. Me especializo en
+        desarrollo web y siempre estoy buscando aprender nuevas tecnologías.
       </p>
 
       <p class="article__p">
-        Soy un líder comprometido y responsable, con una actitud proactiva y un enfoque en el trabajo en equipo. Mi experiencia previa en ayudar a mis compañeros de equipo a desarrollar portafolios, tiendas en línea y páginas que consumen APIs me ha permitido adquirir una sólida experiencia en el campo del desarrollo web.
+        Soy un líder comprometido y responsable, con una actitud proactiva y un enfoque en el trabajo en equipo. Mi
+        experiencia previa en ayudar a mis compañeros de equipo a desarrollar portafolios, tiendas en línea y páginas
+        que consumen APIs me ha permitido adquirir una sólida experiencia en el campo del desarrollo web.
       </p>
       <p class="article__p">
-        Mi portafolio refleja mi experiencia y habilidades en el desarrollo web y estaría encantado de discutir cómo puedo contribuir con mi experiencia y habilidades en su equipo.
+        Mi portafolio refleja mi experiencia y habilidades en el desarrollo web y estaría encantado de discutir cómo
+        puedo contribuir con mi experiencia y habilidades en su equipo.
       </p>
 
       <p class="article__p">
@@ -445,7 +452,7 @@
                 visitantes puedan recibir notificaciones sobre mis nuevos proyectos y lanzamientos. Además, habrá una
                 sección de videos donde podrán ver demos y tutoriales de mis proyectos.
               </p>
-             
+
               <p class="li__div--pProjects">
                 Estoy emocionado de mostrar mi trabajo y recibir sus comentarios y sugerencias en la
                 sección de comentarios.
@@ -470,33 +477,41 @@
     <article class="section__article--comments">
       <div class="section__article--divComments">
         <p class="article__div--pComments">
-          <i class='bx bx-repost' style='color:#ff4d4d'  ></i> Tu retroalimentación es valiosa para mi crecimiento como desarrollador web.
+          <i class='bx bx-repost' style='color:#ff4d4d'></i> Tu retroalimentación es valiosa para mi crecimiento como
+          desarrollador web.
         <p class="article__div--pComments">
-          <i class='bx bx-repost' style='color:#ff4d4d'  ></i> Si has llegado hasta aca, me
+          <i class='bx bx-repost' style='color:#ff4d4d'></i> Si has llegado hasta aca, me
           gustaría saber lo que piensas sobre mi sitio web y trabajos.
         </p>
         <p class="article__div--pComments">
-          <i class='bx bx-repost' style='color:#ff4d4d'  ></i> Por favor, deja tu comentario aquí.</p>
+          <i class='bx bx-repost' style='color:#ff4d4d'></i> Por favor, deja tu comentario aquí.
+        </p>
       </div>
-      <form class="section__form" id="comment-form">
+
+      <form action="https://formspree.io/f/mayznqgd" method="POST" class="section__form" id="comment-form">
 
         <label class="section__form--label" for="name">
           Nombre:
-          <input class="section__form--input" type="text" id="name" name="name" required>
+          <input class="section__form--input" type="text" name="name" required placeholder="Ingrese su Nombre">
         </label>
 
         <label class="section__form--label" for="email">
           Correo Electrónico:
-          <input class="section__form--input" type="email" id="email" name="email" required>
+          <input class="section__form--input" type="email" name="email" required placeholder="ingrese su Email">
         </label>
 
         <label class="section__form--label" for="message">
           Comentario:
-          <textarea class="section__textarea" id="message" name="message" required></textarea>
+          <textarea class="section__textarea" name="message" required 
+          placeholder="ingrese su comentario">
+        </textarea>
         </label>
-        
-        <button class="section__form--button" type="button" id="send-comment">Enviar</button>
+
+        <button class="section__form--button" type="submit">
+          Enviar
+        </button>
       </form>
+
     </article>
   </section>
 
