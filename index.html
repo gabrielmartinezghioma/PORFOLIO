@@ -14,13 +14,16 @@
   <title>Gabriel Martinez</title>
 
   <!-- fonts -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <!-- style shets -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
+    @import url('https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet');
     @import url('./assets/reset.css');
     @import url('./assets/styles.css');
     @import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
@@ -207,7 +210,7 @@
   </section>
 </header>
 <main class="main">
-  <section id='AcercaDeMi' class="main__section--AcercadeMi">
+  <section  data-aos="zoom-in-up" id='AcercaDeMi' class="main__section--AcercadeMi">
     <h2 class="article__h2">Acerca de Mi</h2>
     <article class="main__section--article">
       <p class="article__p">
@@ -240,7 +243,7 @@
 
   </section>
 
-  <section id="MisHabilidades" class="main__section--MisHabilidades">
+  <section data-aos="zoom-in-up" id="MisHabilidades" class="main__section--MisHabilidades">
     <h2 class="article__h2 ">¿Cuáles son mis habilidades?</h2>
 
     <ul class="section__ul">
@@ -322,7 +325,7 @@
   </section>
 
 
-  <section id="MisProyectos" class="main__section--porfolio ">
+  <section data-aos="zoom-in-up" id="MisProyectos" class="main__section--porfolio ">
     <h2 class="article__h2">Mis Proyectos</h2>
     <article class="section__article--sllider">
       <button class="prev-btn"><i class='bx bx-skip-previous-circle bx-tada-hover'></i></button>
@@ -468,7 +471,7 @@
 
 
 
-  <section id="Comentarios" class="section--form">
+  <section data-aos="zoom-in-up" id="Comentarios" class="section--form">
 
     <h2 class="article__h2">
       Comentarios
@@ -488,9 +491,7 @@
         </p>
       </div>
 
-      <form  action="https://formspree.io/f/mayznqgd"
-      method="POST"
-      class="section__form" id="comment-form">
+      <form action="https://formspree.io/f/mayznqgd" method="POST" class="section__form" id="comment-form">
 
         <label class="section__form--label" for="name">
           Nombre:
@@ -509,7 +510,7 @@
 
         <button class="section__form--button" type="submit" id="buttonForm">
           Enviar
-        </button>  
+        </button>
       </form>
     </article>
   </section>
@@ -517,7 +518,7 @@
 </main>
 
 
-<footer class="footer">
+<footer data-aos="zoom-in-up" class="footer">
   <section id="Contacto" class="footer__section">
     <h2 class="main__footer--h2">Contacto</h2>
     <article class="section__article--contacto">
@@ -544,7 +545,11 @@
   </section>
 </footer>
 
-
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration:1500
+  });
+</script>
 <script src="./assets/scripts/js.js"></script>
 </body>
