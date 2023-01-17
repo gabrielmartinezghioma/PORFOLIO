@@ -33,7 +33,13 @@
 
   <!-- icon -->
   <link rel="icon" href="./assets/images/code-alt-regular-24.ico">
+  
+  <!-- script EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
+  <script type="text/javascript">
+    emailjs.init('R8lhKuBK2Rnz1Au3A')
+  </script>
 </head>
 
 <body id='Home' class="body">
@@ -64,10 +70,10 @@
         <a href="#AcercaDeMi">Acerca de Mi</a>
       </li>
       <li class="nav__ul--li">
-        <a href="#MisProyectos">Mis Proyectos</a>
+        <a href="#MisHabilidades">Mis Habilidades</a>
       </li>
       <li class="nav__ul--li">
-        <a href="#MisHabilidades">Mis Habilidades</a>
+        <a href="#MisProyectos">Mis Proyectos</a>
       </li>
       <li class="nav__ul--li">
         <a href="#Comentarios">Comentarios</a>
@@ -210,7 +216,7 @@
   </section>
 </header>
 <main class="main">
-  <section  data-aos="zoom-in-up" id='AcercaDeMi' class="main__section--AcercadeMi">
+  <section data-aos="zoom-in-up" id='AcercaDeMi' class="main__section--AcercadeMi">
     <h2 class="article__h2">Acerca de Mi</h2>
     <article class="main__section--article">
       <p class="article__p">
@@ -491,24 +497,24 @@
         </p>
       </div>
 
-      <form action="https://formspree.io/f/mayznqgd" method="POST" class="section__form" id="comment-form">
+      <form id="form" class="section__form">
 
-        <label class="section__form--label" for="name">
+        <label class="section__form--label" for="from_name">
           Nombre:
-          <input class="section__form--input" type="text" name="name" required placeholder="Ingrese su Nombre">
+          <input class="section__form--input" type="text"  name="from_name" id="from_name" required placeholder="Ingrese su Nombre">
         </label>
 
-        <label class="section__form--label" for="email">
+        <label class="section__form--label" for="email_id">
           Correo Electrónico:
-          <input class="section__form--input" type="email" name="email" required placeholder="ingrese su Email">
+          <input class="section__form--input" type="text" name="email_id" id="email_id" required placeholder="ingrese su Email">
         </label>
 
         <label class="section__form--label" for="message">
           Comentario:
-          <textarea class="section__textarea" name="message" placeholder="Ingrese su comentario" required></textarea>
+          <textarea class="section__textarea" name="message"  id="message" placeholder="Ingrese su comentario" required></textarea>
         </label>
 
-        <button class="section__form--button" type="submit" id="buttonForm">
+        <button class="section__form--button" type="submit" id="button" value="Send Email">
           Enviar
         </button>
       </form>
@@ -548,7 +554,7 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({
-    duration:1500
+    duration: 1200
   });
 </script>
 <script src="./assets/scripts/js.js"></script>
