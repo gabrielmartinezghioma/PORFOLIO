@@ -60,6 +60,48 @@ for (let i = 0; i < articleDivBx.length; i++) {
     })
 }
 
+
+//cuenta regresiva
+const countdown = document.getElementById("countdown");
+const days = document.getElementById("days");
+const hours = document.getElementById("hours");
+const minutes = document.getElementById("minutes");
+const seconds = document.getElementById("seconds");
+
+// Set the date you want to count down to
+const countDownDate = new Date("Jan 23, 2023 00:00:00").getTime();
+
+// Update the count down every 1 second
+const x = setInterval(() => {
+  // Get today's date and time
+  const now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  const distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  const d = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const s = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the elements
+  days.innerHTML = d;
+  hours.innerHTML = h;
+  minutes.innerHTML = m;
+  seconds.innerHTML = s;
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    countdown.innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+
+
+
+
 // Obtener elementos del DOM
 const slider = document.querySelector('.section__ul--projects');
 const slides = document.querySelectorAll('.section__ul--liProjects');

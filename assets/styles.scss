@@ -360,6 +360,140 @@
     width: 90%;
 }
 
+
+.main__section--nextRelase {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+}
+
+#countdown {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 0 1% 0;
+    font-family: 'San Francisco', sans-serif;
+    color: var(--fifth--color);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    background-image: url(./images/631a5d4631d4c55a475f3e34_noise-50.png), linear-gradient(90deg, var(--quarter--color), var(--quarter--color));
+    background-position: 0px 0px, 0px 0px;
+    background-size: 200px, auto;
+    border-radius: 15px;
+    padding: 30px 40px;
+
+}
+
+.countdown-item {
+    text-align: center;
+    font-size: 8rem;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--quarter--color);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.countdown-item:hover {
+    transform: scale(1.1);
+}
+
+.countdown-item p {
+    font-size: 1.5rem;
+}
+
+.section__article--nextRelease {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    position: relative;
+    text-align: center;
+    margin: 5%;
+}
+
+.section__article--imgNextRelease {
+    max-width: 80%;
+    filter: grayscale(100%);
+    transition: all 0.5s ease-in-out;
+    margin: 0 0 8% 0;
+    border-radius: 15px;
+}
+
+.section__article--imgNextRelease:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.launch {
+    animation: launch 1s ease-in-out;
+}
+
+@keyframes launch {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(-200px);
+    }
+}
+
+.section__article--divNextRelease{
+    backdrop-filter: blur(5px);
+    background-image: url(./images/631a5d4631d4c55a475f3e34_noise-50.png), linear-gradient(90deg, var(--quarter--color), var(--quarter--color));
+    background-position: 0px 0px, 0px 0px;
+    background-size: 200px, auto;
+    border-radius: 15px;
+    padding: 30px 40px;
+    transition: all 1s;
+}
+
+.section__article--divNextRelease:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.article__div--pNextRelease{
+    font-size: 130%;
+    text-align: start;
+    margin-bottom: 20px;
+    font-family: var(--type-secondary);
+    font-weight: 200;
+    color: var(--primary--color);
+}
+
+.article__div--pNextRelease::selection{
+    background-color: transparent;
+    color: var(--sixth--color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .main__section--AcercadeMi {
     display: flex;
     flex-direction: column;
@@ -744,7 +878,7 @@
     transition: all 0.5s;
 }
 
-.section__form--input::selection{
+.section__form--input::selection {
     color: var(--fifth--color);
     background-color: transparent;
 }
