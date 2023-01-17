@@ -23,7 +23,6 @@
   <!-- style shets -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
-    @import url('https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet');
     @import url('./assets/reset.css');
     @import url('./assets/styles.css');
     @import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
@@ -33,12 +32,12 @@
 
   <!-- icon -->
   <link rel="icon" href="./assets/images/code-alt-regular-24.ico">
-  
+
   <!-- script EmailJS -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
   <script type="text/javascript">
-    emailjs.init('R8lhKuBK2Rnz1Au3A')
+    emailjs.init('p7VA_OFcQNg5J4bJL')
   </script>
 </head>
 
@@ -208,7 +207,7 @@
       </article>
     </article>
 
-    <a class="section__article--aButton" href="mailto:martinezgabrielalejandro4@gmail.com">
+    <a class="section__article--aButton" href="mailto:gabrielghioma@gmail.com">
       <i class='bx bxs-envelope bx-tada'></i>
       Contactame
     </a>
@@ -501,22 +500,24 @@
 
         <label class="section__form--label" for="from_name">
           Nombre:
-          <input class="section__form--input" type="text"  name="from_name" id="from_name" required placeholder="Ingrese su Nombre">
+          <input class="section__form--input" type="text" name="from_name" id="from_name" required
+            placeholder="Ingrese su Nombre">
         </label>
 
         <label class="section__form--label" for="email_id">
           Correo Electrónico:
-          <input class="section__form--input" type="text" name="email_id" id="email_id" required placeholder="ingrese su Email">
+          <input class="section__form--input" type="email" name="email_id" id="email_id" required
+            placeholder="ingrese su Email">
         </label>
 
         <label class="section__form--label" for="message">
           Comentario:
-          <textarea class="section__textarea" name="message"  id="message" placeholder="Ingrese su comentario" required></textarea>
+          <textarea class="section__textarea" name="message" id="message" placeholder="Ingrese su comentario"
+            required></textarea>
         </label>
 
-        <button class="section__form--button" type="submit" id="button" value="Send Email">
-          Enviar
-        </button>
+        <input class="section__form--button" type="submit" id="button" value="Send Email">
+        </input>
       </form>
     </article>
   </section>
@@ -537,24 +538,24 @@
         <p class="section__article--p">+54 9 351 8187742</p>
       </a>
 
-      <a class="section__article--a" href="mailto:martinezgabrielalejandro4@gmail.com">
+      <a class="section__article--a" href="mailto:gabrielghioma@gmail.com">
         <div class="section__article--aContacto">
           <i class='bx bxs-envelope'></i>
         </div>
         <h3 class="section__article--h3">Email</h3>
         <p class="section__article--p">
-          martinezgabrielalejandor4@
+          gabrielghioma@
           <div class="section__article--p">gmail.com</div>
         </p>
       </a>
     </article>
   </section>
 </footer>
-
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({
-    duration: 1200
+    duration: 1500
   });
 </script>
 <script src="./assets/scripts/js.js"></script>

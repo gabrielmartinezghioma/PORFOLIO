@@ -141,14 +141,28 @@ document.getElementById('form')
         btn.value = 'Sending...';
 
         const serviceID = 'default_service';
-        const templateID = 'template_gu5zdo6';
-
+        const templateID = 'template_awdz0yd';
+    
         emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
                 btn.value = 'Send Email';
-                alert('Sent!');
+                this.reset();
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: '¡Muchas gracias por tu comentario! Estoy emocionado de seguir mejorando gracias a tu opinión.',
+                    showConfirmButton: false,
+                    timer: 5000
+                  })
+                 
             }, (err) => {
                 btn.value = 'Send Email';
-                alert(JSON.stringify(err));
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Lo sentimos, ha ocurrido un problema. Por favor, haz clic en  ENLACE que aparece al final de este mensaje para enviar tu comentario por email',
+                    footer: '<a href="mailto:gabrielghioma@gmail.com">ENLACE</a>'
+                })
+                this.reset();
             });
     });
