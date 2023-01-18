@@ -69,7 +69,7 @@ const minutes = document.getElementById("minutes");
 const seconds = document.getElementById("seconds");
 
 // Set the date you want to count down to
-const countDownDate = new Date("Jan 23, 2023 00:00:00").getTime();
+const countDownDate = new Date("Jan 25, 2023 00:00:00").getTime();
 
 // Update the count down every 1 second
 const x = setInterval(() => {
