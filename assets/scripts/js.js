@@ -172,12 +172,7 @@ slider.addEventListener('touchstart', (e) => {
     stopSlideshow();
 });
 
-// Agregar evento touchend para dispositivos táctiles
-slider.addEventListener('touchend', (e) => {
-    touchEndX = e.changedTouches[0].clientX;
-    handleSwipe();
-    startSlideshow();
-});
+
 
 // Agregar evento mouseover y mouseout para escritorio
 slider.addEventListener('mouseover', stopSlideshow);
