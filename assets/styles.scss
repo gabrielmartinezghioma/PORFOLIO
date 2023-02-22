@@ -20,32 +20,34 @@
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
-  }
-  
-  .accordion-header {
+}
+
+.accordion-header {
+    width: 100%;
     font-size: 1.6rem;
     font-weight: bold;
     cursor: pointer;
-    margin: 40px;
-    transition: transform 1s,color 1s;
-  }
+    margin: 40px 0;
+    transition: transform 1s, color 1s;
+}
 
-  .accordion-header:hover{
+
+.accordion-header:hover {
     transform: scale(110%);
     color: var(--fifth--color);
-    transition: transform 1s,color 1s ;
-  }
-  
- 
-  .accordion-content {
+    transition: transform 1s, color 1s;
+}
+
+
+.accordion-content {
     display: none;
     padding: 10px;
-  }
-  
-  .accordion-item.active .accordion-content {
+}
+
+.accordion-item.active .accordion-content {
     display: block;
-  }
-  
+}
+
 
 .header {
     display: flex;
@@ -406,10 +408,11 @@
 
 #countdown {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     width: 80%;
-    margin: 0 0 1% 0;
+    margin: 0 auto;
     font-family: 'San Francisco', sans-serif;
     color: var(--fifth--color);
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
@@ -419,7 +422,6 @@
     background-size: 200px, auto;
     border-radius: 15px;
     padding: 30px 40px;
-
 }
 
 .countdown-item {
@@ -431,6 +433,7 @@
     background-color: var(--quarter--color);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease-in-out;
+    margin-bottom: 2%;
 }
 
 .countdown-item:hover {
@@ -483,7 +486,7 @@
     }
 }
 
-.section__article--divNextRelease{
+.section__article--divNextRelease {
     backdrop-filter: blur(5px);
     background-image: url(./images/631a5d4631d4c55a475f3e34_noise-50.png), linear-gradient(90deg, var(--quarter--color), var(--quarter--color));
     background-position: 0px 0px, 0px 0px;
@@ -493,11 +496,12 @@
     transition: all 1s;
 }
 
-.section__article--divNextRelease:hover{
+.section__article--divNextRelease:hover {
     transform: scale(1.1);
     transition: all 1s;
 }
-.article__div--pNextRelease{
+
+.article__div--pNextRelease {
     font-size: 130%;
     text-align: start;
     margin-bottom: 20px;
@@ -506,7 +510,7 @@
     color: var(--primary--color);
 }
 
-.article__div--pNextRelease::selection{
+.article__div--pNextRelease::selection {
     background-color: transparent;
     color: var(--sixth--color);
 }
@@ -1224,4 +1228,23 @@
         padding: 0;
     }
 
+    #countdown {
+        width: 90%;
+    }
+
+    .countdown-item {
+        font-size: 5rem;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    #countdown {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .countdown-item {
+        font-size: 3rem;
+    }
 }
