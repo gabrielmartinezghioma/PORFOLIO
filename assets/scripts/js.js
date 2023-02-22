@@ -191,7 +191,7 @@ document.getElementById('form')
     .addEventListener('submit', function (event) {
         event.preventDefault();
 
-        btn.value = 'Sending...';
+        btn.value = 'Enviando...';
 
         const serviceID = 'service_czf3zwk';
         const templateID = 'template_a7l18vm';
