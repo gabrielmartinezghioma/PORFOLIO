@@ -29,13 +29,11 @@
     transition: transform 1s, color 1s;
 }
 
-
 .accordion-header:hover {
     transform: scale(110%);
     color: var(--fifth--color);
     transition: transform 1s, color 1s;
 }
-
 
 .accordion-content {
     display: none;
@@ -273,7 +271,7 @@
     border-left: 4px solid var(--primary--color);
     border-right: 4px solid var(--primary--color);
     border-radius: 50%;
-    animation: animate_01 5s linear infinite;
+    animation: animate_01 10s linear infinite;
     z-index: 1;
     pointer-events: none;
 }
@@ -296,7 +294,7 @@
     border-left: 4px solid var(--sixth--color);
     border-right: 4px solid var(--fifth--color);
     border-radius: 50%;
-    animation: animate_02 4s linear infinite;
+    animation: animate_02 8s linear infinite;
     z-index: 1;
     pointer-events: none;
 }
@@ -353,7 +351,9 @@
     min-width: 7vw;
 }
 .div__ul--li{
-    font-size: 20px;
+    font-size: 25px;
+    color: var(--fifth--color);
+    margin-top: 3px;
 }
 
 .section__article--aButton {
@@ -894,18 +894,6 @@
     background-color: transparent;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .footer {
     width: 100%;
     display: flex;
@@ -992,7 +980,7 @@
     line-height: 0.8;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1060px) {
     .nav__div--menuResponsive {
         display: flex;
         justify-content: center;
