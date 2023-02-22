@@ -132,6 +132,7 @@
         <li class="article__ul--li" style="--i:9" data-id="Content9">
           <i class='bx bxl-git'></i>
         </li>
+        
 
       </ul>
 
@@ -594,9 +595,9 @@
             placeholder="Ingrese su Nombre">
         </label>
 
-        <label class="section__form--label" for="email_id">
+        <label class="section__form--label" for="from_email">
           Correo Electrónico:
-          <input class="section__form--input" type="email" name="email_id" id="email_id" required
+          <input class="section__form--input" type="email"name="from_email" id="from_email" required
             placeholder="ingrese su Email">
         </label>
 
@@ -606,7 +607,7 @@
             required></textarea>
         </label>
 
-        <input class="section__form--button" type="submit" id="button" value="Send Email">
+        <input class="section__form--button" type="submit" id="button" value="Enviar comentario">
         </input>
       </form>
     </article>
@@ -640,11 +641,12 @@
   </section>
 </footer>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1500
-  });
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('kQNN14WaxT2rXGP4w')
 </script>
+
 <script src="./assets/scripts/js.js"></script>
 </body>
