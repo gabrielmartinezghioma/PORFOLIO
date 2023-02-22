@@ -106,6 +106,17 @@ paragraphs.forEach((paragraph) => {
   });
 });
 
+const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+accordionHeaders.forEach(header => {
+  header.addEventListener('click', () => {
+    const accordionItem = header.parentElement;
+    
+    accordionItem.classList.toggle('active');
+  });
+});
+
+
 
 // Obtener elementos del DOM
 const slider = document.querySelector('.section__ul--projects');
