@@ -69,7 +69,7 @@ const minutes = document.getElementById("minutes");
 const seconds = document.getElementById("seconds");
 
 // Set the date you want to count down to
-const countDownDate = new Date("Jan 25, 2023 00:00:00").getTime();
+const countDownDate = new Date("Mar 05, 2023 00:00:00").getTime();
 
 // Update the count down every 1 second
 const x = setInterval(() => {
@@ -98,8 +98,13 @@ const x = setInterval(() => {
   }
 }, 1000);
 
+const paragraphs = document.querySelectorAll('.article__p');
 
-
+paragraphs.forEach((paragraph) => {
+  paragraph.addEventListener('click', () => {
+    paragraph.classList.toggle('active');
+  });
+});
 
 
 // Obtener elementos del DOM
