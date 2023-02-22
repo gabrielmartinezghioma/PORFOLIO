@@ -1168,9 +1168,11 @@
     }
 
     .section__article--comments {
+        width: 100vw;
         flex-direction: column;
        height: 900px;
        justify-content: center;
+       border-radius: 0;
     }
 
     .section__article--divComments {
