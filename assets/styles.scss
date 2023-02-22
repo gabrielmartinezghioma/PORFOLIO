@@ -190,7 +190,7 @@
 .article__h1 {
     color: var(--primary--color);
     font-family: var(--type-principal);
-    font-size: 4vw;
+    font-size: 6vw;
     line-height: 1.4;
     font-weight: 300;
     color: var(--secondary--color);
@@ -231,7 +231,7 @@
     border-radius: 50%;
     transition: 0.5s;
     box-shadow: 0 0 0 4px var(--primary--color), 0 0 0 4px var(--primary--color);
-    transform: rotate(calc(360deg/5*var(--i)));
+    transform: rotate(calc(360deg/9*var(--i)));
     transform-origin: 19.8vw;
     overflow: hidden;
     font-size: 3.59vw;
@@ -246,7 +246,7 @@
 }
 
 .article__ul--li>i {
-    transform: rotate(calc(-360deg/5*var(--i)));
+    transform: rotate(calc(-360deg/9*var(--i)));
     transition: 0.5s;
 }
 
@@ -352,17 +352,6 @@
 
 .li__a--img {
     min-width: 4.317vw;
-}
-
-.div__ul--li {
-    font-family: var(--type-secondary);
-    font-size: 1.289vw;
-    color: var(--secondary--color);
-    margin: 5px;
-}
-
-.div__ul--liSpan {
-    color: var(--primary--color);
 }
 
 .section__article--aButton {
@@ -1061,7 +1050,7 @@
 
     .article__div--h2,
     .article__h1 {
-        font-size: 7vw;
+        font-size: 9vw;
     }
 
     .section__article--animate {
@@ -1111,12 +1100,7 @@
         min-width: 10.5vw;
     }
 
-    .div__ul--li {
-        font-size: 2.8vw;
-        margin-top: 5%;
-    }
-
-    .section__article--aButton {
+      .section__article--aButton {
         justify-self: center;
         align-self: center;
         margin: 0;
@@ -1190,7 +1174,7 @@
 
     .article__div--h2,
     .article__h1 {
-        font-size: 8vw;
+        font-size: 9vw;
     }
 
     .article__div--h2Span {
@@ -1239,10 +1223,6 @@
 
     .li__a--img {
         min-width: 12vw;
-    }
-
-    .div__ul--li {
-        font-size: 5vw;
     }
 
     .section__article--aButton {
